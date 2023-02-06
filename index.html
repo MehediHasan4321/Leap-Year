@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="content">
             <div class="leap-year-container">
                 <h1>Leap Year Generator</h1>
+                <div class="input-group">
+                    <input type="number" id="year-input" placeholder="Type Year">
+                    <input type="button" value="Generate Leap Year" id="leap-year-btn">
+                </div>
+                <p id="leap-year-show-box"><span>0000</span> is not a leap Year </p>
+
             </div>
         </div>
     </div>
     <script src="./index.js"></script>
 </body>
+
 </html>
