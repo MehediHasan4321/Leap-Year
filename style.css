@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 100, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 600px;
+    height: 600px;
+    border-radius: 5px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leap-year-container{
+    width: 450px;
+    height: 450px;
+}
