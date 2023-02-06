@@ -9,21 +9,20 @@ function main() {
 
 
 
-    leapYearGeneratorBtn.addEventListener("keypress",(e)=>{
-        if(e.target.value ===13){
-            let value = e.target.value;
-            isLeapYear(value)
-        }
+    leapYearGeneratorBtn.addEventListener("click", (e) => {
+        let value = yearInput.value;
+        isLeapYear(value)
     })
-
 
 }
 
 function isLeapYear(value) {
     let leapYearShowBox = document.getElementById("leap-year-show-box")
-    if (value % 4 === 0 || value % 400 === 0 && value % 1000 !== 0) {
-        leapYearShowBox.innerHTML = value + " is a Leap Year";
+    
+    if (value % 400 === 0 || value % 4 === 0) {
+       return leapYearShowBox.innerText = "Leap Year"
     } else {
-        value + " is not a Leap Yar"
+       return leapYearShowBox.innerText = "Not Leap Year"
     }
+    
 }
