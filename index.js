@@ -18,11 +18,15 @@ function main() {
 
 function isLeapYear(value) {
     let leapYearShowBox = document.getElementById("leap-year-show-box")
-    
-    if (value % 400 === 0 || value % 4 === 0) {
-       return leapYearShowBox.innerText = "Leap Year"
+
+    if (value === "") {
+        alert("Your Input field is empty")
     } else {
-       return leapYearShowBox.innerText = "Not Leap Year"
+        if (value % 400 === 0 || value % 4 === 0) {
+            return leapYearShowBox.innerHTML = value + " Leap Year"
+        } else {
+            return leapYearShowBox.innerHTML = value + " Not Leap Year"
+        }
     }
-    
+
 }
